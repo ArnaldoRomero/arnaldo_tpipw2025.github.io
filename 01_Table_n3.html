@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Club Guaraní — Sitio Oficial</title>
+  <link rel="stylesheet" href="02_Style_n3.css" />
+  <meta name="description" content="Club Guaraní: historia, ubicación, galería, beneficios y registro de socios. SPA sin frameworks." />
+  <link rel="icon" href="logo.png" />
+</head>
+<body>
+  <!-- Header fijo con logo alineado a la izquierda y nav superior -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Al hacer click vuelve a la portada (home) -->
+      <a href="#home" class="brand" id="brandLink" aria-label="Ir al inicio">
+        <img src="Foto1_Logo2.jpg" alt="Logo del Club Guaraní" class="brand-logo" />
+        <span class="brand-name">Club Guaraní</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Abrir menú">☰</button>
+        <ul class="nav-list" id="navList">
+          <li><a class="nav-link" href="#historia" data-nav="historia">Historia</a></li>
+          <li><a class="nav-link" href="#ubicacion" data-nav="ubicacion">Ubicación</a></li>
+          <li><a class="nav-link" href="#galeria" data-nav="galeria">Galería</a></li>
+          <li><a class="nav-link" href="#beneficios" data-nav="beneficios">Beneficios</a></li>
+          <li><a class="nav-link" href="#socios" data-nav="socios">Socios</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal SPA -->
+  <main class="site-main">
+    <div class="container">
+
+      <!-- Portada: foto del equipo con la copa -->
+      <section id="home" class="page page-active" role="region" aria-labelledby="home-title">
+        <h1 id="home-title" class="visually-hidden">Inicio — Club Guaraní</h1>
+        <div class="hero card">
+          <figure class="hero-figure">
+            <!-- Reemplazable por foto real del equipo -->
+            <img src="Foto_flyer000.jpg" alt="Plantel del Club Guaraní sosteniendo la copa" />
+            <figcaption class="muted">Orgullo aurinegro: el equipo celebrando con la copa 🏆</figcaption>
+          </figure>
+          <p class="hero-text">
+            Bienvenidos al <strong>Club Guaraní</strong>. Descubrí nuestra <em>Historia</em>, visitá la <em>Ubicación</em>, recorré la <em>Galería</em>, conocé los <em>Beneficios</em> y asociate en <em>Socios</em>.
+          </p>
+        </div>
+
+        <!-- Descripción breve + datos de contacto e imágenes ilustrativas -->
+        <section class="info-grid" aria-labelledby="about-title">        
+          <div class="about card">
+            <h2 id="about-title" class="section-title">Sobre el Club</h2>
+            <p>El club Guaraní es una institución deportiva y social de Paraguay, con sede en el Barrio Pinozá, en la zona conocida como Dos Bocas de la ciudad de Asunción. Fundado el 12 de octubre de 1903, juega en la Primera División de Paraguay desde la creación de la misma. Disputa el clásico más añejo ante Olimpia y el Clásico capitalino frente a Libertad. ​También mantiene una importante rivalidad deportiva con Cerro Porteño y en menor medida con el Sportivo Luqueño.
+            </p>
+            <p>Al haber ganado los campeonatos de Primera división de 1906 y 1907, se convirtió en el primer campeón de la historia del fútbol paraguayo y el primer bicampeón del mismo, dichos campeonatos los ganó además de forma invicta, por lo tanto se erigió en el primer campeón invicto y hasta la fecha único bicampeón invicto en Paraguay. En 1996 se alzó con el Torneo Apertura, convirtiéndose así en el primer ganador semestral, aunque luego cayó en la final del campeonato anual. En 2018 ganó la primera edición de la Copa Paraguay. Es el cuarto club con más títulos de la Primera División de Paraguay. Su mejor marca en los torneos continentales fue ser semifinalista de Copa Libertadores de América, lo fue en 1966 y en 2015.
+            </p>
+            <p>Su equipo juvenil es el equipo paraguayo mejor posicionado en la Copa Libertadores Sub-20 con un tercer lugar en la edición 2022.
+            </p>
+            <ul class="contact">
+              <li><strong>Email:</strong> <a href="mailto:contacto@clubguarani.org">contacto@clubguarani.org</a></li>
+              <li><strong>Redes:</strong> <a href="#" aria-label="Instagram">Instagram</a> · <a href="#" aria-label="Facebook">Facebook</a> · <a href="#" aria-label="X">X</a></li>
+              <li><strong>Dirección:</strong> Av. Aurora 1500, Asunción, Paraguay</li>
+            </ul>
+          </div>
+          <div class="about-images">
+            <img src="Foto_flyer001.jpg" alt="Entrenamiento en el estadio" />
+            <img src="Foto_flyer002.jpg" alt="Hinchas del Club Guaraní" />
+          </div>
+        </section>
+      </section>
+
+      <!-- Sección: Historia -->
+      <section id="historia" class="page" role="region" aria-labelledby="historia-title">
+        <h2 id="historia-title" class="section-title">Historia</h2>
+        <div class="card centered">
+          <p class="lead">
+            Fundado por un grupo de apasionados del deporte, el <strong>Club Guaraní</strong> nace con la misión de promover los valores del trabajo en equipo, la disciplina y el respeto.
+          </p>
+          <p>Fue fundado el 12 de octubre de 1903. Algunos de sus fundadores fueron Manuel Bella, Ramón Caballero, Salvador Melián. Al club se lo conoce también como 'El Aborigen" (por el indio), "El Cacique", "El Legendario" (antiguo) y "Entidad de Dos Bocas". Fue uno de los fundadores -junto a Olimpia, Nacional, Libertad y Gral. Díaz de Asunción- en el año 1906, en la antigua Liga Paraguaya de Football Association, hoy renombrada bajo la denominación de Asociación Paraguaya de Fútbol.
+          </p>
+          <p>El general Bernardino Caballero, un hombre vinculado estrechamente al fútbol, donó parte de su quinta (actual Parque Caballero) para las primeras canchas de fútbol. El club nació en la residencia del señor Juan Patri Bello, situada en la actual calle Alberdi, haciendo esquina con las de El Paraguayo Independiente y la de Benjamín Constant (actual Correo Nacional). Este fue su primer presidente y el responsable del único gol con el que Guaraní derrotó a Olimpia en aquel primer encuentro futbolístico registrado en el Paraguay.
+          </p>
+          <p>El nombre del club es un homenaje a los pueblos guaraníes (los cuales se hallan entre los originarios pobladores de la tierra que hoy se llama Paraguay), además de ser la denominación del idioma hablado por la mayoría de la población del país.
+          </p>
+          <p>Los colores del club y de la hinchada son producto de la moción del anfitrión de la sede fundacional, Juan Patri, quien sugirió el oro y el negro inspirado en la bandera del célebre corsario inglés Francis Drake, cuyas historias evocaban epopeyas de grandeza y valentía. Cabe destacar que Guaraní es el único club que todavía mantiene los colores originales de su casaca y debemos mencionar que fue el primer campeón del Paraguay, y que además, uno de sus jugadores fue el primero en anotar un gol en dicho país.
+          </p>
+          
+          <h2>Primer bicampeón e invicto (1906- 1907)</h2>
+          <p>Guaraní ganó invicto el Primer Campeonato Oficial del Fútbol Paraguayo en 1906, logrando 18 de los 20 puntos posibles, con 32 goles a favor y solo 2 en contra. Los equipos participantes fueron Guaraní, Olimpia, Libertad, Nacional, General Díaz y 14 de mayo.
+          </p>
+          <p>El segundo campeonato organizado por la liga se disputó en el año 1907 con los mismos participantes que en el primero; Guaraní impuso de nuevo su gran calidad de equipo ganando, otra vez de forma invicta, el torneo con 16 puntos. Con esto, el legendario es el primer y único bicampeón invicto del fútbol paraguayo.
+          </p>
+          <p>El sábado 4 de enero de 1908, en el Teatro Nacional se produce el estreno mundial de la marcha "Foot Ball Guaraní", tras coronarse bicampeón invicto. Obra musical del maestro italiano Niccollino Pellegrini, quien anunció a viva voz su interpretación como parte del programa concertino. Esta fue la primera obra de un maestro dedicada a un club deportivo.
+          </p>
+          <p>Luego de la presentación, un estentóreo aplauso colmado de vítores por parte del público asistente festejó los últimos compases. Todos de pie gritaban ¡Coda! ¡Coda!, es decir, "Otra vez", "Desde el principio".
+          </p>
+          <p>Las más grandes personalidades de Asunción en la primera década del siglo XX (1905 a 1909) fueron connotados socios honorarios del Guaraní Foot Ball Club. Entre ellos: Gral. Bernardino Caballero, Dr. José Segundo Decoud, Enrique Solano López, Dr. Benjamín Aceval, Dr. Eusebio Ayala, Mo. Niccollino Pellegrini, Carlos Cahen D’Anvers y Adolfo Riquelme.
+          </p>
+          <p>En octubre de 1921, un incendio que se produjo en el Club Mbiguá, ocasionó la pérdida de documentos irrecuperables acerca de la historia de club, dichos documentos se encontraban en una secretaría del Mbiguá.
+          </p>
+          
+          <h2>Últimos campeonatos nacionales</h2>
+          <p>En 1984 ganó su noveno campeonato en la primera categoría del balompié paraguayo terminando con la hegemonía impuesta por el Olimpia de seis años consecutivos (1978 a 1983).
+          </p>
+          <p>En el año 1996, se consagró campeón del torneo Apertura de la liga y de esta manera llegó a jugar en la Copa Libertadores de América. En ese año, se destacó el mediocampista Hugo Ovelar, que también jugó por el seleccionado paraguayo.
+          </p>
+          <p>Durante las últimas temporadas, tuvo buenos logros en el ámbito futbolístico. En el Campeonato Clausura 2001 jugó la final con Cerro Porteño y perdió por penales, En el año 2002 salió vicecampeón, y por consecuencia participó en la Copa Libertadores de América y en el año 2003 volvió a perder una final, esta vez contra Libertad. En ese mismo año, participa también de la Copa Nissan Sudamericana, aunque no pudo pasar a la otra etapa quedando eliminado.
+          </p>
+          <p>Los títulos internacionales obtenidos fueron: la Copa COTIF que se jugó en Valencia-España, en agosto de 2006 en la categoría Sub-20 con integrantes hasta de 18 años inclusive y el de Campeón de la PUNTACUP 07, disputado en marzo de 2007 en la ciudad de Punta del Este, Uruguay.
+          </p>
+          <p>En 2010, y tras varios intentos que casi tuvieron éxito en los últimos años, de la mano del entrenador Félix Darío León y bajo la presidencia de Juan Alberto Acosta, el equipo de Guaraní se coronó campeón del fútbol paraguayo luego de 26 años de espera. Algunos de los jugadores más sobresalientes de la campaña fueron Jonathan Fabbro, Rodrigo Teixeira (máximo goleador), Pablo Aurrecochea, Elvis Marecos, César Cáceres Cañete, Eduardo Filippini, Ángel Ortiz, Julián Benítez, Hugo Notario, Hernán Hechalar , entre otros.​
+          </p>
+          <p>Luego de 6 años y medio de espera, donde siempre el club se ubicaba en lugares de privilegio en la tabla, se logró la estrella número 11. Luego de un mano a mano con Olimpia, donde el legendario saco ventajas con victorias por resultados cortos con goles claves de su estrella Néstor Camacho. De las victorias más recordadas podemos sumar la de Sol de América por 4-3, donde el aborigen estuvo debajo en el marcador dos veces y logró remontarlo sobre la hora. Otro hecho importante en este campeonato fue que Hernán Rodrigo López logró superar la marca de Juan Samudio y se transformó en el goleador historio de la Primera División de Paraguay. El equipo campeón también tenía presente a jugadores como Alfredo Aguilar, Luis de la Cruz, Julio César Cáceres, Luis Cabral, Marcelo Palau, Juan Aguilar y Alberto Contrera.
+          </p>
+          <p>El Club Guaraní se consagró Campeón del Torneo Clausura 2016 una fecha antes de culminar el torneo, ganando 3 a 0 al Club Sptvo.Luqueño de visitante, ya que con este resultado era inalcanzable en la tabla. En la última fecha (22) tuvo un polémico juego contra Olimpia, en el primer tiempo el conjunto Legendario marcó un gol (Rodrigo López), el cual fue mal anulado por el línea, ya que no existió la posición adelantada. Unos minutos más tarde, de tiro de esquina el Piru Contrera (Guaraní) metió un disparo olímpico, la pelota aparentemente ingresó y el arquero Diego Barreto (Olimpia) lo sacó, los jugadores del conjunto aborigen protestaron pero el juez del encuentro lo invalidó. En el segundo tiempo Salustiano Candia (Olimpia) se encargó de transformar penal por gol para que el partido culmine 1 a 0 a favor del decano, resultado que no opacó el festejo aurinegro que recibió la copa n.° 11 en su historia.
+          </p>
+          
+        </div>
+      </section>
+
+      <!-- Sección: Ubicación -->
+      <section id="ubicacion" class="page" role="region" aria-labelledby="ubicacion-title">
+        <h2 id="ubicacion-title" class="section-title">Ubicación</h2>
+        <div class="map-card">
+          <!-- Iframe de Google Maps -->
+          <div class="map-embed-wrapper">
+            <iframe
+              title="Mapa del Club Guaraní"
+              class="map-embed"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230864.64650225878!2d-57.82859288244377!3d-25.295463827218576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da87181af1ecf%3A0x4537493788fb7b8d!2sEstadio%20Rogelio%20Silvino%20Livieres!5e0!3m2!1ses!2sar!4v1760756438063!5m2!1ses!2sar">
+            </iframe>
+          </div>
+          <div class="address">
+            <strong>Dirección:</strong> Ubicado en la ciudad de Asunción sobre la avenida Eusebio Ayala (ruta PY02) y la calle 1811.
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección: Galería -->
+      <section id="galeria" class="page" role="region" aria-labelledby="galeria-title">
+        <h2 id="galeria-title" class="section-title">Galería de fotos</h2>
+        <p class="muted">Haz clic en una miniatura para ampliarla.</p>
+
+        <!-- Galería 15 imágenes -->
+        <div class="gallery-grid" id="galleryGrid" aria-live="polite">          
+          <img src="Foto_galeria14.jpg" alt="Foto 15 — Copa" data-full="Foto_galeria14.jpg" />
+          <img src="Foto_galeria00.jpg" alt="Foto 1 — Entrenamiento" data-full="Foto_galeria00.jpg" />
+          <img src="Foto_galeria02.jpg" alt="Foto 3 — Equipo" data-full="Foto_galeria02.jpg" />
+          <img src="Foto_galeria01.jpg" alt="Foto 2 — Hinchada" data-full="Foto_galeria01.jpg" />          
+          <img src="Foto_galeria03.jpg" alt="Foto 4 — Partido" data-full="Foto_galeria03.jpg" />
+          <img src="Foto_galeria04.jpg" alt="Foto 5 — Tribuna" data-full="Foto_galeria04.jpg" />
+          <img src="Foto_galeria05.jpg" alt="Foto 6 — Arqueros" data-full="Foto_galeria05.jpg" />          
+          <img src="Foto_galeria08.jpg" alt="Foto 9 — Técnica" data-full="Foto_galeria08.jpg" />
+          <img src="Foto_galeria09.jpg" alt="Foto 10 — Infantiles" data-full="Foto_galeria09.jpg" />
+          <img src="Foto_galeria10.jpg" alt="Foto 11 — Cantera" data-full="Foto_galeria10.jpg" />
+          <img src="Foto_galeria11.jpg" alt="Foto 12 — Estadio" data-full="Foto_galeria11.jpg" />
+          <img src="Foto_galeria12.jpg" alt="Foto 13 — Festejo" data-full="Foto_galeria12.jpg" />
+          <img src="Foto_galeria13.jpg" alt="Foto 14 — Viaje" data-full="Foto_galeria13.jpg" />
+          <img src="Foto_galeria16.jpg" alt="Foto 14 — Viaje" data-full="Foto_galeria16.jpg" /> 
+          <img src="Foto_galeria17.jpg" alt="Foto 14 — Viaje" data-full="Foto_galeria17.jpg" /> 
+          <img src="Foto_galeria18.jpg" alt="Foto 14 — Viaje" data-full="Foto_galeria18.jpg" />
+          <img src="Foto_galeria06.jpg" alt="Foto 7 — Mediocampo" data-full="Foto_galeria06.jpg" />
+          <img src="Foto_galeria07.jpg" alt="Foto 8 — Defensa" data-full="Foto_galeria07.jpg" />           
+        </div>
+
+        <!-- Modal / Lightbox accesible -->
+        <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Visor de imagen">
+          <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">✕</button>
+          <img id="lightboxImg" alt="Imagen ampliada de la galería" />
+          <div class="lightbox-caption" id="lightboxCaption"></div>
+          <button class="lightbox-prev" id="lightboxPrev" aria-label="Anterior">‹</button>
+          <button class="lightbox-next" id="lightboxNext" aria-label="Siguiente">›</button>
+        </div>
+      </section>
+
+      <!-- Sección: Beneficios -->
+      <section id="beneficios" class="page" role="region" aria-labelledby="beneficios-title">
+        <h2 id="beneficios-title" class="section-title">Beneficios del predio</h2>
+
+        <div class="benefits-box">
+          <ul class="benefits-list">
+            <li>Acceso a canchas de fútbol (5, 7 y 11)</li>
+            <li>Gimnasio completo con rutinas guiadas</li>
+            <li>Piscina climatizada</li>
+            <li>Escuelitas deportivas para niños</li>
+            <li>Descuentos en comercios adheridos</li>
+            <li>Salón de eventos para socios</li>
+          </ul>
+        </div>
+
+        <h3 class="subheading">Planes de Membresía</h3>
+        <div class="table-wrapper">
+          <table class="table" aria-label="Tabla comparativa de planes">
+            <thead>
+              <tr>
+                <th>Plan</th>
+                <th>Precio (PYG/mes)</th>
+                <th>Beneficios</th>
+                <th>Requisitos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Clásica</td>
+                <td>120.000</td>
+                <td>Acceso al predio y canchas libres</td>
+                <td>Documento + cuota al día</td>
+              </tr>
+              <tr>
+                <td>Premium</td>
+                <td>220.000</td>
+                <td>Clásica + Gimnasio + Piscina</td>
+                <td>Apto físico</td>
+              </tr>
+              <tr>
+                <td>Familiar</td>
+                <td>360.000</td>
+                <td>Premium para 2 adultos + 2 menores</td>
+                <td>Grupo familiar acreditado</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Sección: Socios (Registro) -->
+      <section id="socios" class="page" role="region" aria-labelledby="socios-title">
+        <h2 id="socios-title" class="section-title">Socios — Registro</h2>
+        <p class="muted">Completá el formulario. <em>Nombre</em>, <em>Email</em> y <em>Tipo de membresía</em> son obligatorios.</p>
+
+        <form id="signupForm" class="form" novalidate>
+          <fieldset class="fieldset">
+            <legend>Datos personales</legend>
+            <div class="form-row">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Arnaldo José" required />
+              <small class="error" data-error-for="nombre"></small>
+            </div>
+            <div class="form-row">
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" name="apellido" placeholder="Romero" />
+            </div>
+            <div class="form-row">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="arnaldo@mail.com" required />
+              <small class="error" data-error-for="email"></small>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend>Tipo de membresía</legend>
+            <div class="radio-group">
+              <label><input type="radio" name="plan" value="Clásica" required /> Clásica</label>
+              <label><input type="radio" name="plan" value="Premium" /> Premium</label>
+              <label><input type="radio" name="plan" value="Familiar" /> Familiar</label>
+            </div>
+            <small class="error" data-error-for="plan"></small>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend>Intereses</legend>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="intereses" value="Futbol" /> Futbol</label>
+              <label><input type="checkbox" name="intereses" value="Tenis" /> Tenis</label>
+              <label><input type="checkbox" name="intereses" value="Natación" /> Natación</label>
+              <label><input type="checkbox" name="intereses" value="Gimnasio" /> Gimnasio</label>
+              <label><input type="checkbox" name="intereses" value="Eventos" /> Eventos</label>
+            </div>
+          </fieldset>
+
+          <div class="form-row">
+            <label for="pais">País / Provincia</label>
+            <select id="pais" name="pais" required>
+              <option value="">Seleccioná una opción</option>
+              <option value="PY-Asunción">Paraguay — Asunción</option>
+              <option value="PY-Central">Paraguay — Central</option>
+              <option value="AR-BuenosAires">Argentina — Buenos Aires</option>
+              <option value="BR-RioGrandeSul">Brasil — Rio Grande do Sul</option>
+            </select>
+            <small class="error" data-error-for="pais"></small>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-ghost">Limpiar</button>
+          </div>
+          <p class="form-success" id="formSuccess" role="status" hidden>✅ ¡Registro enviado con éxito!</p>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Club Guaraní — Todos los derechos reservados.</small>
+    </div>
+  </footer>
+
+  <!-- Lógica SPA -->
+  <script src="03_Operations_n3.js" defer></script>
+</body>
+</html>
