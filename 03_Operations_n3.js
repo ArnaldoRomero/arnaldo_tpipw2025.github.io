@@ -53,7 +53,6 @@ navTgl.addEventListener('click', () => {
 });
 
 /* ===== Galería + Lightbox ===== */
-// Las imágenes ya están en el HTML (15 <img>), aquí agregamos interacciones.
 const lightbox      = $('#lightbox');
 const lbImg         = $('#lightboxImg');
 const lbCaption     = $('#lightboxCaption');
@@ -150,9 +149,6 @@ function validateForm(fd){
     ok = false;
   } else setError('plan', '');
 
-  // País/Provincia opcional en requisitos, pero si se requiere, descomentar:
-  // if (!fd.get('pais')) { setError('pais', 'Seleccioná una opción.'); ok = false; } else setError('pais', '');
-
   return ok;
 }
 
@@ -161,8 +157,6 @@ form?.addEventListener('submit', (e) => {
   const fd = new FormData(form);
   if (!validateForm(fd)) return;
 
-  // Aquí podrías enviar al backend con fetch()
-  // fetch('/api/socios', { method: 'POST', body: fd });
 
   // Feedback de éxito
   $('#formSuccess').hidden = false;
@@ -174,3 +168,4 @@ form?.addEventListener('submit', (e) => {
 document.addEventListener('keydown', (e)=>{
   if (e.key === 'Tab') document.body.classList.add('user-tabbing');
 });
+
