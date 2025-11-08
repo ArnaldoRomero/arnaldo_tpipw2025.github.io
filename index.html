@@ -60,9 +60,18 @@
             <p>Su equipo juvenil es el equipo paraguayo mejor posicionado en la Copa Libertadores Sub-20 con un tercer lugar en la edición 2022.
             </p>
             <ul class="contact">
-              <li><strong>Email:</strong> <a href="mailto:contacto@clubguarani.org">contacto@clubguarani.org</a></li>
-              <li><strong>Redes:</strong> <a href="#" aria-label="Instagram">Instagram</a> · <a href="#" aria-label="Facebook">Facebook</a> · <a href="#" aria-label="X">X</a></li>
-              <li><strong>Dirección:</strong> Av. Aurora 1500, Asunción, Paraguay</li>
+              
+              <li>
+                <strong>Email:</strong>
+                <a href="mailto:clubguarani.adm@gmail.com" target="_blank" rel="noopener noreferrer">
+                  clubguarani.adm@gmail.com
+                </a>
+              </li>
+
+              <li><strong>Redes:</strong> <a href="https://www.instagram.com/clubguarani/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">Instagram</a> 
+              <a href="https://www.facebook.com/clubguarani" aria-label="Facebook" target="_blank" rel="noopener noreferrer">Facebook</a> 
+              <a href="https://x.com/intent/follow?screen_name=ClubGuarani" aria-label="X" target="_blank" rel="noopener noreferrer">X</a></li>
+              <li><strong>Dirección:</strong> Av. Eusebio Ayala (ruta PY02) y la calle 1811, Asunción, Paraguay</li>
             </ul>
           </div>
           <div class="about-images">
@@ -290,8 +299,48 @@
             <button type="submit" class="btn btn-primary">Enviar</button>
             <button type="reset" class="btn btn-ghost">Limpiar</button>
           </div>
-          <p class="form-success" id="formSuccess" role="status" hidden>✅ ¡Registro enviado con éxito!</p>
+          <p class="form-success" id="formSuccess" role="status" hidden>✅ ¡Datos enviados!</p>          
         </form>
+
+        <!-- QUIZ: se desbloquea tras completar el registro -->
+        <div id="quizModule" class="quiz-card disabled" aria-disabled="true">
+          <div class="quiz-header">
+            <h3 class="quiz-title">Quiz de Bienvenida</h3>
+            <p class="quiz-subtitle">
+              Respondé 5 preguntas. Con 3 correctas ganás <strong>1 mes</strong> gratis. Con 5/5 ganás <strong>1 año</strong> de membresía.
+            </p>
+          </div>
+
+          <!-- Overlay que indica bloqueo hasta registrar -->
+          <div class="quiz-lock" id="quizLock" aria-hidden="false">
+            🔒 Completá el registro para desbloquear el Quiz.
+          </div>
+
+          <!-- Contenido interactivo del quiz -->
+          <div class="quiz-body">
+            <div class="quiz-progress" id="quizProgress" aria-live="polite">Pregunta 1 de 5</div>
+
+            <div class="quiz-question" id="quizQuestion">Cargando…</div>
+
+            <form id="quizForm" class="quiz-form" novalidate>
+              <fieldset class="quiz-options" id="quizOptions" role="radiogroup" aria-label="Opciones de respuesta">
+                <!-- opciones generadas por JS -->
+              </fieldset>
+
+              <div class="quiz-actions">
+                <button type="submit" id="quizAnswerBtn" class="btn btn-dark" disabled>Responder</button>
+              </div>
+            </form>
+
+            <div class="quiz-feedback" id="quizFeedback" role="status" aria-live="polite"></div>
+          </div>
+
+          <div class="quiz-footer" id="quizFooter" hidden>
+            <p id="quizResult"></p>
+            <!-- <button type="button" id="quizRestart" class="btn btn-ghost">Reintentar</button> -->
+          </div>
+        </div>
+
       </section>
 
     </div>
@@ -303,7 +352,10 @@
     </div>
   </footer>
 
+    
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <!-- Lógica SPA -->
   <script src="03_Operations_n3.js" defer></script>
+  
 </body>
 </html>
